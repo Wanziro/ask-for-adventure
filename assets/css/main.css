@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=Inter:wght@100;200;300;400;500;700&family=Poppins:wght@200&display=swap");
+
+body {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+  background: #0b1d26;
+}
+
+/* nav */
+header {
+  /* background-color: #0b1d26; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.app-nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+.app-nav ul li {
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 20px;
+}
+.app-nav ul li:last-child {
+  margin-right: 0px;
+}
+
+.app-nav ul li img {
+  width: 30px;
+  height: 30px;
+}
+.logo img {
+  width: 100px;
+}
+
+/* slider */
+.home-carouser-main-container {
+  height: 100%;
+  background-color: #0b1d26;
+  position: relative;
+}
+.carousel {
+  height: 100% !important;
+}
+.carousel-item img {
+  height: 100% !important;
+  width: 100%;
+}
+.home-carouser-main-container .contents {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+  background: linear-gradient(347deg, rgba(11, 29, 38, 0) 0%, #0b1d26 100%);
+}
+.centerize-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  width: 50%;
+  margin: auto;
+}
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-header .line {
+  width: 72px;
+  height: 2px;
+  background: #fbd784;
+  margin-right: 15px;
+}
+.info-header h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+  flex: 1;
+}
+.welcome-description {
+  color: #fff;
+  font-family: Adamina;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+
+/* ask for section */
+.ask-for-section {
+  background-color: #0b1d26;
+  padding: 5rem 0px;
+}
+.ask-for-header {
+  text-align: center;
+  color: #fff;
+  font-family: Adamina;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+.ask-for-header span {
+  color: #fbd784;
+}
+.multiSlider .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
+}
+
+/* The colour of the indicators */
+.multiSlider .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.multiSlider .carousel-indicators .active {
+  background: #fbd784;
+}
+.multiSlider .carousel-control-next,
+.carousel-control-prev,
+.multiSlider .carousel-control-next,
+.carousel-control-next {
+  width: auto !important;
+  padding: 5px;
+}
+
+.next-prev-icon-container {
+  background-color: #f5ab00;
+  padding: 10px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+/* ask for item */
+.ask-for-item {
+  background-color: #d9d9d9;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ask-for-item img {
+  width: 100px !important;
+  height: 100px !important;
+}
+.ask-for-item h3 {
+  color: #0b1d26;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 10px 0px;
+}
+.ask-for-item p {
+  color: #0b1d26;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.ask-for-item button {
+  border-radius: 10px;
+  background: #0b1d26;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  padding: 7px 15px;
+}
+
+.explore-section {
+  background: #0b1d26;
+  padding-bottom: 5rem;
+}
+.explore-section .explore-bg {
+  background-color: #d9d9d9;
+}
+
+.explore-section .explore-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.explore-section .explore-bg h3 {
+  color: #0b1d26;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 123.077% */
+  text-transform: capitalize;
+}
+.read-more-btn {
+  text-transform: capitalize;
+  background: #0b1d26;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  border: none;
+  padding: 7px 1rem;
+  border-radius: 15px;
+}
+
+.bordered-image {
+  width: 100%;
+  border-radius: 15px;
+}
+.top-adventures-section {
+  padding-bottom: 5rem;
+}
+.adventure-header {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 50% */
+  text-transform: capitalize;
+}
+.adventure-description {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.adventure-btn {
+  border-radius: 15px;
+  background: #d9d9d9;
+  border: none;
+  padding: 0.5rem 1.5rem;
+
+  color: #0b1d26;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+}
