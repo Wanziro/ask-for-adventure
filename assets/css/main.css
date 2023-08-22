@@ -482,8 +482,62 @@ footer ul li a:hover {
   margin-top: 15px;
 }
 
+#mobileNav {
+  display: none;
+}
+
+#mobileNavContents {
+  width: 70%;
+  position: absolute;
+  background-color: #0b1d26;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10000;
+  padding-top: 1rem;
+}
+.mobile-nav-contents {
+  color: #fff;
+}
+.mobile-nav-contents ul {
+  margin: 0;
+  padding: 0;
+}
+.mobile-nav-contents ul li {
+  list-style: none;
+  text-transform: capitalize;
+  border-bottom: 1px solid #cccccc81;
+  padding: 1rem 1.5rem;
+}
+.mobile-nav-contents ul li a {
+  color: #fff !important;
+  text-decoration: none;
+  display: block;
+}
+.mobile-nav-contents ul li img {
+  width: 30px;
+}
+.close-btn {
+  float: right;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
 /* responsiveness */
 @media only screen and (max-width: 768px) {
+  body {
+    position: relative;
+  }
+  #normalNav {
+    display: none;
+  }
+  #mobileNav {
+    display: block;
+  }
   .home-carouser-main-container {
     height: 100vh;
   }
@@ -493,5 +547,9 @@ footer ul li a:hover {
   }
   .home-carouser-main-container .contents {
     background-color: rgba(0, 0, 0, 0.25);
+  }
+  .centerize-info {
+    width: 80%;
+    height: 1005;
   }
 }

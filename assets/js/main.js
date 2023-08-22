@@ -33,3 +33,7 @@ $(document).ready(function () {
     }
   });
 });
+
+function toggleMobileNav() {
+  $("#mobileNavContents").toggleClass("d-none");
+}
