@@ -23,3 +23,13 @@ $(".multi-caraousel .carousel-item").each(function () {
     next.children(":first-child").clone().appendTo($(this));
   }
 });
+
+$(document).ready(function () {
+  window.addEventListener("scroll", (event) => {
+    if (window.scrollY > 500) {
+      $("#header").addClass("header-bg");
+    } else {
+      $("#header").removeClass("header-bg");
+    }
+  });
+});

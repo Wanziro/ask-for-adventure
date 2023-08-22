@@ -11,11 +11,13 @@ body {
 
 /* nav */
 header {
-  /* background-color: #0b1d26; */
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
+}
+.header-bg {
+  background-color: #0b1d26;
 }
 .app-nav {
   display: flex;
