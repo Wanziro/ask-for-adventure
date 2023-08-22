@@ -61,7 +61,7 @@ header {
 .carousel {
   height: 100% !important;
 }
-.carousel-item img {
+.home-carouser-main-container .carousel-item img {
   height: 100% !important;
   width: 100%;
 }
@@ -480,4 +480,18 @@ footer ul li a:hover {
   opacity: 0.5;
   margin: 0;
   margin-top: 15px;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 768px) {
+  .home-carouser-main-container {
+    height: 100vh;
+  }
+  .home-carouser-main-container .carousel-item img {
+    height: 100vh !important;
+    object-fit: cover;
+  }
+  .home-carouser-main-container .contents {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
 }
